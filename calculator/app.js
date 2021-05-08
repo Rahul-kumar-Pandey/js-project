@@ -19,17 +19,18 @@ function printCurrentExpression(currentExpression){
     else
         document.getElementById("exp-val").innerHTML=currentExpression;
 }
-function printCurrentValue(currentExpression) {
+
+/*function printCurrentValue(currentExpression) {
     if(currentExpression=="")
         document.getElementById("current-value").innerHTML=currentExpression;
     else
         document.getElementById("current-value").innerHTML=eval(currentExpression);
-}
+}*/
+
 function printOutputValue(currentExpression){        
     if(currentExpression.length){
         var opelement=document.getElementById("output");
         output.innerHTML=eval(currentExpression);
-        console.log(output.innerHTML);
         opelement.style.zIndex='1';
         printCurrentExpression("");
     }
